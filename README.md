@@ -2,6 +2,8 @@
 
 A beautifully designed digital counter web application for tracking mantra chanting with integrated background music and audio feedback.
 
+**🔗 Live Preview:** [Mantra Counter](https://satyanaryan-parida.github.io/Mantra-Counter/)
+
 ## ✨ Features
 
 - **Digital Counter Display**: 4-digit counter (0000-9999) with elegant DS-Digital font styling
