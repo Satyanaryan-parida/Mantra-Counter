@@ -1,0 +1,212 @@
+@import url(https://fonts.cdnfonts.com/css/ds-digital);
+/* font-family: "DS-Digital"; */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  --darkGold: #dec183;
+  --lightGold: #f8e8b3;
+  --SuperiorityBlue: #6dafd2;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("./Img/woodTextureMd.png");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Counter Wrapper */
+.Counter-wrapper {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Counter Body */
+
+.counter-body {
+  width: clamp(100px, 50vw, 250px);
+  aspect-ratio: 1/1;
+  /* Outline */
+  outline: clamp(2px, 1vw, 5px) solid var(--lightGold);
+
+  /* Border */
+  border: clamp(2px, 1vw, 5px) solid var(--darkGold);
+  border-radius: 50%;
+
+  /* Shadow */
+  background-color: var(--SuperiorityBlue);
+  box-shadow: 0 0 10px black, 0 0 10px inset, 0 0 40px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* ------------------------------------------------------------------ */
+/* Chant Button Style */
+
+.btnWrapper {
+  width: 40%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.chantBtn {
+  cursor: pointer;
+  filter: drop-shadow(0 0 2px black);
+  transition: transform 0.2s ease-in;
+}
+
+.chantBtn:active {
+  transform: scale(0.97);
+}
+
+.chantBtn img {
+  width: 100%;
+}
+.chant-label {
+  font-size: clamp(9px, 2.6vw, 1.2rem);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  color: brown;
+}
+
+/* ----------------------------------------------- */
+/* Display Style */
+.Display {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleX(1.1) scaleY(1.3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2rem, 10vw, 4.5rem);
+
+  /* color setup */
+  background: linear-gradient(
+    200deg,
+    var(--lightGold) 30%,
+    var(--darkGold) 90%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.time {
+  width: 1ch;
+  text-align: center;
+  font-family: "DS-Digital";
+  font-weight: bold;
+}
+
+/* ------------------------------------------ */
+
+/* controls */
+
+.controls {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  position: absolute;
+  width: 30%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  outline: clamp(2px, 1vw, 4px) solid var(--darkGold);
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px black;
+  transition: transform 0.3s ease-in;
+}
+.btn-music {
+  left: -40%;
+}
+.btn-reset {
+  right: -40%;
+}
+
+.btn-reset svg {
+  transform: rotateY(180deg);
+}
+
+.btn-bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--SuperiorityBlue);
+  box-shadow: 0 0 5px inset;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-bg svg {
+  width: 50%;
+  fill: var(--lightGold);
+}
+
+.btn-bg:active {
+  transform: scale(0.97);
+}
+
+.btn span {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  color: brown;
+}
+
+/* ------------------------------------------ */
+
+/* Animation for .btn-music and .btn-reset in a smaller screen */
+
+@media (max-width: 420px) {
+  .btn-music {
+    transform: translate(50%, 100%);
+  }
+  .btn-reset {
+    transform: translate(-50%, 100%);
+  }
+}
+
+/* Mala */
+.mala {
+  position: absolute;
+  top: -50%;
+  transform: translateY(-20%) scale(1.7);
+}
+
+.mala img {
+  width: 100%;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+/* ------------------------------- */
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(transparent 70%, rgba(109, 175, 210, 0.5) 99%);
+}
