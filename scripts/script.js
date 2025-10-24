@@ -33,9 +33,9 @@ btnreset.addEventListener("click", () => {
 // Music
 
 // Chant
-const chantAudio = new Audio("../Src/music/Radhe Radhe.mp3");
+const chantAudio = new Audio("../Src/music/RadheRadhe.mp3");
 const bgMusic = new Audio(
-  "../Src/music/hare-krishna-relaxing-music-5-117834.mp3"
+  "../Src/music/backgroundMusic.mp3"
 );
 
 // backgroundMusic setup  (play,pause,loop)
