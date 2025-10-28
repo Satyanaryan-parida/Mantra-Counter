@@ -12,7 +12,7 @@ function updateTime() {
     span.textContent = padCount[index];
   });
 }
-// 
+
 // update time
 
 chantBtn.addEventListener("click", () => {
@@ -33,7 +33,7 @@ btnreset.addEventListener("click", () => {
 // Music
 
 // Chant
-const chantAudio = new Audio("./Src/music/RadheRadhe.mp3");
+
 const bgMusic = new Audio(
   "./Src/music/backgroundMusic.mp3"
 );
