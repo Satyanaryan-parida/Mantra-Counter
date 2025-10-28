@@ -12,7 +12,7 @@ function updateTime() {
     span.textContent = padCount[index];
   });
 }
-
+// 
 // update time
 
 chantBtn.addEventListener("click", () => {
