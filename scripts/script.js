@@ -13,14 +13,13 @@ function updateTime() {
   });
 }
 
-// Chant sound
-const chantAudio = new Audio("./Src/music/RadheRadhe.mp3");
-
 // update time
 chantBtn.addEventListener("click", () => {
   count = count > 9999 ? 0 : ++count;
   updateTime();
 
+  // Chant sound
+  const chantAudio = new Audio("./Src/music/RadheRadhe.mp3");
   chantAudio.currentTime = 0;
   chantAudio.play();
 });
