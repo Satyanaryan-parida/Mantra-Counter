@@ -13,8 +13,10 @@ function updateTime() {
   });
 }
 
-// update time
+// Chant sound
+const chantAudio = new Audio("./Src/music/RadheRadhe.mp3");
 
+// update time
 chantBtn.addEventListener("click", () => {
   count = count > 9999 ? 0 : ++count;
   updateTime();
@@ -24,21 +26,15 @@ chantBtn.addEventListener("click", () => {
 });
 
 // Reset time
-
 btnreset.addEventListener("click", () => {
   count = 0;
   updateTime();
 });
 
-// Music
+// Background music
+const bgMusic = new Audio("./Src/music/backgroundMusic.mp3");
 
-// Chant
-
-const bgMusic = new Audio(
-  "./Src/music/backgroundMusic.mp3"
-);
-
-// backgroundMusic setup  (play,pause,loop)
+// backgroundMusic setup  (play, pause, loop)
 let bgMusicPlaying = false;
 bgMusic.loop = true;
 
